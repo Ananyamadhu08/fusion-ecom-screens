@@ -23,7 +23,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="bg-grey-100">
     <!-- header -->
     <header class="w-full h-20 shadow bg-slate-900 fixed z-50">
       <div class="flex justify-around align-items-center h-full w-full">
@@ -75,10 +75,12 @@
           <!-- navigation links -->
           <a href="/pages/wishlist-page/wishlist-page.html">
             <span class="w-full h-full tooltip btn-icon badge-container mr-3">
-              <i class="text-rose-500 text-hover-rose-300 fas fa-heart"></i>
+              <i
+                class="text-rose-500 text-hover-rose-300 fas fa-heart text-3xl"
+              ></i>
               <span
-                class="icon-badge-sm bg-rose-500 text-white text-xs status-badge"
-                >2</span
+                class="icon-badge-sm bg-slate-100 text-black text-xs status-badge"
+                >1</span
               >
               <span
                 class="tooltip-text text-black text-lg tooltip-text-bottom bg-rose-100"
@@ -90,10 +92,10 @@
           <a href="pages/cart-page/cart-page.html">
             <span class="btn-icon badge-container tooltip"
               ><i
-                class="text-rose-500 text-hover-rose-300 fas fa-shopping-cart"
+                class="text-rose-500 text-hover-rose-300 fas fa-shopping-cart text-3xl"
               ></i>
               <span
-                class="icon-badge-sm bg-rose-500 text-white text-xs status-badge"
+                class="icon-badge-sm bg-rose-500 text-white text-xs status-badge bg-slate-100 text-black"
                 >2</span
               >
               <span
@@ -111,7 +113,7 @@
     <!-- header -->
 
     <!-- image slider -->
-    <section class="p-20 relative" style="top: 20rem">
+    <section class="p-20 relative" style="top: 7rem">
       <div class="slideshow rounded-lg overflow-hidden" style="height: 30rem">
         <div class="slides fade">
           <div class="slide-number">1 / 3</div>
@@ -144,7 +146,7 @@
         <a class="next" onclick="plusSlides(1)">❯</a>
       </div>
 
-      <div style="text-align: center">
+      <div class="mt-5" style="text-align: center">
         <span
           class="dot"
           style="width: 10px; height: 10px"
@@ -166,11 +168,145 @@
 
     <div class="spacer-3rem"></div>
     <div class="spacer-3rem"></div>
+    <div class="spacer-3rem"></div>
+    <div class="spacer-3rem"></div>
 
     <!-- main -->
+    <main>
+      <!-- featured brands -->
+      <h3 class="h3 font-semibold text-center text-slate-900 mb-1">
+        Featured Brands
+      </h3>
+      <!-- <div class="w-96 bg-rose-500 h-1 m-auto"></div> -->
+      <div class="spacer-2rem"></div>
+      <div class="spacer-2rem"></div>
+
+      <div
+        class="grid grid-cols-4 w-full m-auto"
+        style="max-width: 60rem; gap: 1rem"
+      >
+        <div
+          class="h-52 w-52 text-white rounded-2xl cursor-pointer flex justify-center align-items-center home__page__brand__logo"
+          style="background-image: url(/assets/crayola-logo.png)"
+        ></div>
+        <div
+          class="h-52 w-52 text-white rounded-2xl cursor-pointer flex justify-center align-items-center home__page__brand__logo"
+          style="background-image: url(/assets/faber-castell-logo.png)"
+        ></div>
+        <div
+          class="h-52 w-52 text-white rounded-2xl cursor-pointer flex justify-center align-items-center home__page__brand__logo"
+          style="background-image: url(/assets/staedtler-logo.png)"
+        ></div>
+        <div
+          class="h-52 w-52 text-white rounded-2xl cursor-pointer flex justify-center align-items-center home__page__brand__logo"
+          style="background-image: url(/assets/Maped-logo.png)"
+        ></div>
+      </div>
+      <!-- featured brands -->
+      <div class="spacer-3rem"></div>
+      <div class="spacer-3rem"></div>
+      <div class="spacer-3rem"></div>
+      <div class="spacer-3rem"></div>
+
+      <!-- featured categories -->
+      <h3 class="h3 font-semibold text-center text-slate-900 mb-1">
+        Featured Categories
+      </h3>
+      <!-- <div class="w-96 bg-rose-500 h-1 m-auto"></div> -->
+      <div class="spacer-3rem"></div>
+      <div class="spacer-3rem"></div>
+
+      <div
+        class="grid grid-cols-4 w-full m-auto"
+        style="max-width: 60rem; gap: 1rem"
+      >
+        <div
+          class="h-52 w-52 text-white rounded-2xl shadow-xl flex justify-center align-items-center cursor-pointer home__page__brand__logo bg-slate-900"
+        >
+          <h3 class="text-2xl text-white shadown-2xl p-2 w-full font-semibold">
+            pens & markers
+          </h3>
+        </div>
+        <div
+          class="h-52 w-52 text-white rounded-2xl shadow-xl flex justify-center align-items-center cursor-pointer home__page__brand__logo bg-slate-900"
+        >
+          <h3 class="text-2xl text-white shadown-2xl p-2 w-full font-semibold">
+            paints & watercolors
+          </h3>
+        </div>
+        <div
+          class="h-52 w-52 text-white rounded-2xl shadow-xl flex justify-center align-items-center cursor-pointer home__page__brand__logo bg-slate-900"
+        >
+          <h3 class="text-2xl text-white shadown-2xl p-2 w-full font-semibold">
+            crayons & color pencils
+          </h3>
+        </div>
+        <div
+          class="h-52 w-52 text-white rounded-2xl shadow-xl flex justify-center align-items-center cursor-pointer home__page__brand__logo bg-slate-900"
+        >
+          <h3 class="text-2xl text-white shadown-2xl p-2 w-full font-semibold">
+            notebooks & notepads
+          </h3>
+        </div>
+      </div>
+      <!-- featured categories -->
+
+      <div class="spacer-3rem"></div>
+      <div class="spacer-3rem"></div>
+      <div class="spacer-3rem"></div>
+      <div class="spacer-3rem"></div>
+
+      <!-- video ad section -->
+      <div class="hompage__iframe">
+        <iframe
+          class="w-full h-96"
+          src="https://www.youtube.com/embed/zOnWsfucES0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <!-- video ad section -->
+      <div class="spacer-3rem"></div>
+      <div class="spacer-3rem"></div>
+      <div class="spacer-3rem"></div>
+      <div class="spacer-3rem"></div>
+    </main>
     <!-- main -->
 
     <!-- footer -->
+    <footer
+      class="relative flex flex-col h-44 justify-center align-items-center w-full p-5 z-50 bg-rose-200"
+      style="bottom: 0"
+    >
+      <div class="text-grey-700">
+        Made with
+        <span class="text-rose-700 font-bold ml-1 mr-1">&lt;/&gt;</span>by
+
+        <a class="ml-1 text-hover-rose-600">Ananya</a>
+      </div>
+      <div class="flex mt-3 align-items-center justify-center">
+        <a href="https://github.com/Ananyamadhu08" target="_blank">
+          <i class="fab fa-github mr-2 text-rose-700"></i>
+        </a>
+        <a href="https://twitter.com/AnanyaMadhu27" target="_blank">
+          <i class="fab fa-twitter mr-2 text-rose-700"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/ananya-madhu-74479b206/"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin mr-2 text-rose-700"></i>
+        </a>
+      </div>
+
+      <div class="text-grey-700 mt-5">
+        Designed using
+
+        <a class="text-hover-rose-600">Fusion CSS</a>
+      </div>
+    </footer>
     <!-- footer -->
 
     <script src="index.js"></script>

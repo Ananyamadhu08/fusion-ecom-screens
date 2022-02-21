@@ -17,7 +17,7 @@
   border: none;
   background-color: var(--slate-700);
   outline: none;
-  color: white;
+  color: var(--white);
 }
 .search__bar:focus {
   border: 2px solid var(--rose-500);
@@ -42,3 +42,11 @@
 }
 
 /* header search bar */
+
+/* brand logo */
+.home__page__brand__logo {
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+/* brand logo */
