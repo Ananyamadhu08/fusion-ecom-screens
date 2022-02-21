@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link
+      href="https://fusion-css.netlify.app/css/index.css"
+      rel="stylesheet"
+    />
+    <link href="/index.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="w-full h-20 shadow bg-slate-900 fixed z-50">
+      <div class="flex justify-around align-items-center h-full w-full">
+        <!-- header-left (logo, nav-links) -->
+        <div class="flex justify-center align-items-center">
+          <!-- Logo -->
+          <a href="/index.html">
+            <h5
+              class="h5 cursor-pointer mr-10 text-rose-500 logo text-small text-italic inline-flex justify-center align-items-center"
+            >
+              <!-- <img src="" alt="logo" class="w-14 h-14" /> -->
+              Fusion
+            </h5>
+          </a>
+          <!-- Logo -->
+
+          <!-- Links -->
+          <a href="/index.html">
+            <h6 class="mr-6 cursor-pointer h6 text-hover-rose-500 text-white">
+              Home
+            </h6>
+          </a>
+          <a href="/pages/product-listing-page/product-listing-page.html">
+            <h6 class="mr-6 cursor-pointer h6 text-hover-rose-500 text-white">
+              Shop
+            </h6>
+          </a>
+          <!-- Links -->
+        </div>
+        <!-- header-left (logo, nav-links) -->
+
+        <!-- header middle (searchbar) -->
+        <form action="" class="search__bar__wrapper">
+          <input type="text" class="search__bar" placeholder="Search" />
+          <a href="#">
+            <i class="fas fa-search search__icon text-rose-500"></i>
+          </a>
+        </form>
+        <!-- header middle (searchbar) -->
+
+        <!-- header right (nav-links, login/signup CTA) -->
+        <div class="flex justify-center align-items-center">
+          <!-- login/signup CTA -->
+          <a
+            class="btn btn-square-solid btn-md text-white bg-rose-600 btn-bg-hover-rose-600 mr-7"
+          >
+            LOGIN
+          </a>
+          <!-- login/signup CTA -->
+
+          <!-- navigation links -->
+          <a href="/pages/wishlist-page/wishlist-page.html">
+            <span class="w-full h-full tooltip btn-icon badge-container mr-3">
+              <i
+                class="text-rose-500 text-hover-rose-300 fas fa-heart text-3xl"
+              ></i>
+              <span
+                class="icon-badge-sm bg-slate-100 text-black text-xs status-badge"
+                >1</span
+              >
+              <span
+                class="tooltip-text text-black text-lg tooltip-text-bottom bg-rose-100"
+              >
+                Wish List
+              </span>
+            </span>
+          </a>
+          <a href="/pages/cart-page/cart-page.html">
+            <span class="btn-icon badge-container tooltip"
+              ><i
+                class="text-rose-500 text-hover-rose-300 fas fa-shopping-cart text-3xl"
+              ></i>
+              <span
+                class="icon-badge-sm bg-rose-500 text-white text-xs status-badge bg-slate-100 text-black"
+                >2</span
+              >
+              <span
+                class="tooltip-text text-black text-lg tooltip-text-bottom bg-rose-100"
+              >
+                Cart
+              </span>
+            </span>
+          </a>
+          <!-- navigation links -->
+        </div>
+        <!-- header right (nav-links, login/signup CTA) -->
+      </div>
+    </header>
+    <!-- header -->
+
+    <!-- main section -->
+    <main class="relative w-full" style="top: 5rem; min-height: 100vh">
+      <div class="h-screen flex justify-center">
+        <div
+          style="margin: auto"
+          class="h=96 w-96 p-10 shadow-2xl rounded-2xl bg-rose-400"
+        >
+          <h3 class="text-3xl font-normal text-center text-white mb-20">
+            Login
+          </h3>
+
+          <div class="input-container mb-7">
+            <input
+              type="text"
+              id="email"
+              class="input input-white-hover input-blue-focus"
+              autocomplete="off"
+              placeholder=" "
+            />
+            <label for="email" class="input-label text-grey-700 bg-rose-400"
+              >Email</label
+            >
+          </div>
+
+          <div class="input-container mb-7">
+            <input
+              type="text"
+              id="email"
+              class="input input-white-hover input-blue-focus"
+              autocomplete="off"
+              placeholder=" "
+            />
+            <label for="email" class="input-label text-grey-700 bg-rose-400"
+              >Password</label
+            >
+          </div>
+
+          <div class="flex justify-between mb-10">
+            <div class="flex justify-center align-items-center">
+              <input type="checkbox" class="mr-3" name="" id="" />
+              <h6 class="text-lg text-white font-normal">Remember me</h6>
+            </div>
+            <a
+              href="/pages/signup-login-page/signup-page.html"
+              class="btn btn-text-underline text-white"
+              >Sign Up</a
+            >
+          </div>
+
+          <div>
+            <a href="" class="btn btn-link-cyan text-white"
+              >Forgot Password ?</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- main section -->
+
+    <div class="spacer-3rem"></div>
+    <div class="spacer-3rem"></div>
+    <div class="spacer-3rem"></div>
+    <div class="spacer-3rem"></div>
+
+    <!-- footer -->
+    <footer
+      class="relative flex flex-col h-44 justify-center align-items-center w-full p-5 z-50 bg-rose-200"
+      style="bottom: 0"
+    >
+      <div class="text-grey-700">
+        Made with
+        <span class="text-rose-700 font-bold ml-1 mr-1">&lt;/&gt;</span> by
+
+        <a class="ml-1 text-hover-rose-600">Ananya</a>
+      </div>
+      <div class="flex mt-3 align-items-center justify-center">
+        <a href="https://github.com/Ananyamadhu08" target="_blank">
+          <i class="fab fa-github mr-2 text-rose-700"></i>
+        </a>
+        <a href="https://twitter.com/AnanyaMadhu27" target="_blank">
+          <i class="fab fa-twitter mr-2 text-rose-700"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/ananya-madhu-74479b206/"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin mr-2 text-rose-700"></i>
+        </a>
+      </div>
+
+      <div class="text-grey-700 mt-5">
+        Designed using
+
+        <a class="text-hover-rose-600">Fusion CSS</a>
+      </div>
+    </footer>
+    <!-- footer -->
+  </body>
+</html>
