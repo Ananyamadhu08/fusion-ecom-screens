@@ -50,3 +50,16 @@
   text-align: center;
 }
 /* brand logo */
+
+/* product page */
+
+.product__display__container {
+  height: 100%;
+  width: 80%;
+}
+
+.filter__sidebar__container {
+  height: 100%;
+  width: 20%;
+}
+/* product page */

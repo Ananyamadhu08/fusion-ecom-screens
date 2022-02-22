@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <link
+      href="https://fusion-css.netlify.app/css/index.css"
+      rel="stylesheet"
+    />
+    <link href="/index.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="w-full h-20 shadow bg-slate-900 fixed z-50">
+      <div class="flex justify-around align-items-center h-full w-full">
+        <!-- header-left (logo, nav-links) -->
+        <div class="flex justify-center align-items-center">
+          <!-- Logo -->
+          <a href="/index.html">
+            <h5
+              class="h5 cursor-pointer mr-10 text-rose-500 logo text-small text-italic inline-flex justify-center align-items-center"
+            >
+              <!-- <img src="" alt="logo" class="w-14 h-14" /> -->
+              Fusion
+            </h5>
+          </a>
+          <!-- Logo -->
+
+          <!-- Links -->
+          <a href="/index.html">
+            <h6 class="mr-6 cursor-pointer h6 text-hover-rose-500 text-white">
+              Home
+            </h6>
+          </a>
+          <a href="/pages/product-listing-page/product-listing-page.html">
+            <h6 class="mr-6 cursor-pointer h6 text-rose-500">Shop</h6>
+          </a>
+          <!-- Links -->
+        </div>
+        <!-- header-left (logo, nav-links) -->
+
+        <!-- header middle (searchbar) -->
+        <form action="" class="search__bar__wrapper">
+          <input type="text" class="search__bar" placeholder="Search" />
+          <a href="#">
+            <i class="fas fa-search search__icon text-rose-500"></i>
+          </a>
+        </form>
+        <!-- header middle (searchbar) -->
+
+        <!-- header right (nav-links, login/signup CTA) -->
+        <div class="flex justify-center align-items-center">
+          <!-- login/signup CTA -->
+          <a
+            class="btn btn-square-solid btn-md text-white bg-rose-600 btn-bg-hover-rose-600 mr-7"
+          >
+            LOGIN
+          </a>
+          <!-- login/signup CTA -->
+
+          <!-- navigation links -->
+          <a href="/pages/wishlist-page/wishlist-page.html">
+            <span class="w-full h-full tooltip btn-icon badge-container mr-3">
+              <i
+                class="text-rose-500 text-hover-rose-300 fas fa-heart text-3xl"
+              ></i>
+              <span
+                class="icon-badge-sm bg-slate-100 text-black text-xs status-badge"
+                >1</span
+              >
+              <span
+                class="tooltip-text text-black text-lg tooltip-text-bottom bg-rose-100"
+              >
+                Wish List
+              </span>
+            </span>
+          </a>
+          <a href="pages/cart-page/cart-page.html">
+            <span class="btn-icon badge-container tooltip"
+              ><i
+                class="text-rose-500 text-hover-rose-300 fas fa-shopping-cart text-3xl"
+              ></i>
+              <span
+                class="icon-badge-sm bg-rose-500 text-white text-xs status-badge bg-slate-100 text-black"
+                >2</span
+              >
+              <span
+                class="tooltip-text text-black text-lg tooltip-text-bottom bg-rose-100"
+              >
+                Cart
+              </span>
+            </span>
+          </a>
+          <!-- navigation links -->
+        </div>
+        <!-- header right (nav-links, login/signup CTA) -->
+      </div>
+    </header>
+    <!-- header -->
+
+    <!-- main section -->
+    <main
+      class="relative w-full justify-end flex"
+      style="top: 5rem; min-height: 100vh"
+    >
+      <!-- filters -->
+      <div
+        class="relative ml-10 p-5 filter__sidebar__container"
+        style="top: 8rem"
+      >
+        <div class="flex justify-between align-items-center">
+          <div class="font-semibol text-xl text-black">Filters</div>
+
+          <button class="btn-text-underline">Clear</button>
+        </div>
+        <div class="spacer-1rem"></div>
+        <hr />
+        <div class="spacer-1rem"></div>
+        <ul class="flex flex-col">
+          <li class="pb-3 pt-3 text-black text-lg">Categories</li>
+          <li class="pb-3 pt-3">
+            <label class="text-black text-lg">
+              <input type="checkbox" name="mr-3" id="" />
+              paints
+            </label>
+          </li>
+          <li class="pb-3">
+            <label class="text-black text-lg">
+              <input type="checkbox" name="mr-3" id="" />
+              pens
+            </label>
+          </li>
+          <li class="pb-3">
+            <label class="text-black text-lg">
+              <input type="checkbox" name="mr-3" id="" />
+              crayons
+            </label>
+          </li>
+          <li class="pb-3">
+            <label class="text-black text-lg">
+              <input type="checkbox" name="mr-3" id="" />
+              notebooks
+            </label>
+          </li>
+        </ul>
+
+        <div class="spacer-1rem"></div>
+        <hr />
+        <div class="spacer-1rem"></div>
+        <ul class="flex flex-col">
+          <li class="pb-3 pt-3 text-black text-lg">Brands</li>
+          <li class="pb-3 pt-3">
+            <label class="text-black text-lg">
+              <input type="checkbox" name="mr-3" id="" />
+              crayola
+            </label>
+          </li>
+          <li class="pb-3">
+            <label class="text-black text-lg">
+              <input type="checkbox" name="mr-3" id="" />
+              faber castell
+            </label>
+          </li>
+          <li class="pb-3">
+            <label class="text-black text-lg">
+              <input type="checkbox" name="mr-3" id="" />
+              staedtler
+            </label>
+          </li>
+          <li class="pb-3">
+            <label class="text-black text-lg">
+              <input type="checkbox" name="mr-3" id="" />
+              maped
+            </label>
+          </li>
+        </ul>
+      </div>
+      <!-- filters -->
+
+      <!-- products -->
+      <div class="product__display__container">
+        <div class="flex w-full justify-end">
+          <div class="m-20 flex justify-center align-items-center">
+            <div class="text-xl text-black mr-3">Sort by :</div>
+
+            <div class="custom-select m-16">
+              <select class="bg-rose-300 text-white text-xl">
+                <option selected disabled>Choose a filter</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 p-10" style="gap: 4rem">
+          <div
+            class="shadow-lg rounded flex flex-col relative w-72 mb-12 ml-12"
+          >
+            <div class="h-72">
+              <img
+                class="img-responsive rounded"
+                style="height: 100%"
+                src="https://picsum.photos/200"
+                alt="dress"
+              />
+              <div class="px-4 py-2 text-badge card-badge bg-indigo-300">
+                new
+              </div>
+            </div>
+
+            <div class="p-3">
+              <h3 class="text-grey-600 subtitle1 mb-2">Printed floral dress</h3>
+              <h4 class="subtitle2">Girls white printed dress</h4>
+              <h5 class="text-grey-600 mb-4">sold by marge</h5>
+              <p class="body1 mb-3">
+                White Flower print fit & flare dress. Square neck Short, puff
+                sleeves. Knee length in flared hem Crepe fabric with concealed
+                zip closure.
+              </p>
+              <div class="flex justify-around">
+                <button
+                  class="btn btn-square-solid btn-xs bg-indigo-500 text-white mr-3"
+                >
+                  <span class="fas fa-shopping-cart"></span>Add to cart
+                </button>
+                <button
+                  class="btn btn-square-solid btn-xs bg-indigo-500 text-white"
+                >
+                  <span class="fas fa-heart"></span>Add to wishlist
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="shadow-lg rounded flex flex-col relative w-72 mb-12 ml-12"
+          >
+            <div class="h-72">
+              <img
+                class="img-responsive rounded"
+                style="height: 100%"
+                src="https://picsum.photos/200"
+                alt="dress"
+              />
+              <div class="px-4 py-2 text-badge card-badge bg-indigo-300">
+                new
+              </div>
+            </div>
+
+            <div class="p-3">
+              <h3 class="text-grey-600 subtitle1 mb-2">Printed floral dress</h3>
+              <h4 class="subtitle2">Girls white printed dress</h4>
+              <h5 class="text-grey-600 mb-4">sold by marge</h5>
+              <p class="body1 mb-3">
+                White Flower print fit & flare dress. Square neck Short, puff
+                sleeves. Knee length in flared hem Crepe fabric with concealed
+                zip closure.
+              </p>
+              <div class="flex justify-around">
+                <button
+                  class="btn btn-square-solid btn-xs bg-indigo-500 text-white mr-3"
+                >
+                  <span class="fas fa-shopping-cart"></span>Add to cart
+                </button>
+                <button
+                  class="btn btn-square-solid btn-xs bg-indigo-500 text-white"
+                >
+                  <span class="fas fa-heart"></span>Add to wishlist
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="shadow-lg rounded flex flex-col relative w-72 mb-12 ml-12"
+          >
+            <div class="h-72">
+              <img
+                class="img-responsive rounded"
+                style="height: 100%"
+                src="https://picsum.photos/200"
+                alt="dress"
+              />
+              <div class="px-4 py-2 text-badge card-badge bg-indigo-300">
+                new
+              </div>
+            </div>
+
+            <div class="p-3">
+              <h3 class="text-grey-600 subtitle1 mb-2">Printed floral dress</h3>
+              <h4 class="subtitle2">Girls white printed dress</h4>
+              <h5 class="text-grey-600 mb-4">sold by marge</h5>
+              <p class="body1 mb-3">
+                White Flower print fit & flare dress. Square neck Short, puff
+                sleeves. Knee length in flared hem Crepe fabric with concealed
+                zip closure.
+              </p>
+              <div class="flex justify-around">
+                <button
+                  class="btn btn-square-solid btn-xs bg-indigo-500 text-white mr-3"
+                >
+                  <span class="fas fa-shopping-cart"></span>Add to cart
+                </button>
+                <button
+                  class="btn btn-square-solid btn-xs bg-indigo-500 text-white"
+                >
+                  <span class="fas fa-heart"></span>Add to wishlist
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="shadow-lg rounded flex flex-col relative w-72 mb-12 ml-12"
+          >
+            <div class="h-72">
+              <img
+                class="img-responsive rounded"
+                style="height: 100%"
+                src="https://picsum.photos/200"
+                alt="dress"
+              />
+              <div class="px-4 py-2 text-badge card-badge bg-indigo-300">
+                new
+              </div>
+            </div>
+
+            <div class="p-3">
+              <h3 class="text-grey-600 subtitle1 mb-2">Printed floral dress</h3>
+              <h4 class="subtitle2">Girls white printed dress</h4>
+              <h5 class="text-grey-600 mb-4">sold by marge</h5>
+              <p class="body1 mb-3">
+                White Flower print fit & flare dress. Square neck Short, puff
+                sleeves. Knee length in flared hem Crepe fabric with concealed
+                zip closure.
+              </p>
+              <div class="flex justify-around">
+                <button
+                  class="btn btn-square-solid btn-xs bg-indigo-500 text-white mr-3"
+                >
+                  <span class="fas fa-shopping-cart"></span>Add to cart
+                </button>
+                <button
+                  class="btn btn-square-solid btn-xs bg-indigo-500 text-white"
+                >
+                  <span class="fas fa-heart"></span>Add to wishlist
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="shadow-lg rounded flex flex-col relative w-72 mb-12 ml-12"
+          >
+            <div class="h-72">
+              <img
+                class="img-responsive rounded"
+                style="height: 100%"
+                src="https://picsum.photos/200"
+                alt="dress"
+              />
+              <div class="px-4 py-2 text-badge card-badge bg-indigo-300">
+                new
+              </div>
+            </div>
+
+            <div class="p-3">
+              <h3 class="text-grey-600 subtitle1 mb-2">Printed floral dress</h3>
+              <h4 class="subtitle2">Girls white printed dress</h4>
+              <h5 class="text-grey-600 mb-4">sold by marge</h5>
+              <p class="body1 mb-3">
+                White Flower print fit & flare dress. Square neck Short, puff
+                sleeves. Knee length in flared hem Crepe fabric with concealed
+                zip closure.
+              </p>
+              <div class="flex justify-around">
+                <button
+                  class="btn btn-square-solid btn-xs bg-indigo-500 text-white mr-3"
+                >
+                  <span class="fas fa-shopping-cart"></span>Add to cart
+                </button>
+                <button
+                  class="btn btn-square-solid btn-xs bg-indigo-500 text-white"
+                >
+                  <span class="fas fa-heart"></span>Add to wishlist
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="shadow-lg rounded flex flex-col relative w-72 mb-12 ml-12"
+          >
+            <div class="h-72">
+              <img
+                class="img-responsive rounded"
+                style="height: 100%"
+                src="https://picsum.photos/200"
+                alt="dress"
+              />
+              <div class="px-4 py-2 text-badge card-badge bg-indigo-300">
+                new
+              </div>
+            </div>
+
+            <div class="p-3">
+              <h3 class="text-grey-600 subtitle1 mb-2">Printed floral dress</h3>
+              <h4 class="subtitle2">Girls white printed dress</h4>
+              <h5 class="text-grey-600 mb-4">sold by marge</h5>
+              <p class="body1 mb-3">
+                White Flower print fit & flare dress. Square neck Short, puff
+                sleeves. Knee length in flared hem Crepe fabric with concealed
+                zip closure.
+              </p>
+              <div class="flex justify-around">
+                <button
+                  class="btn btn-square-solid btn-xs bg-indigo-500 text-white mr-3"
+                >
+                  <span class="fas fa-shopping-cart"></span>Add to cart
+                </button>
+                <button
+                  class="btn btn-square-solid btn-xs bg-indigo-500 text-white"
+                >
+                  <span class="fas fa-heart"></span>Add to wishlist
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- products -->
+    </main>
+    <!-- main section -->
+
+    <div class="spacer-3rem"></div>
+    <div class="spacer-3rem"></div>
+    <div class="spacer-3rem"></div>
+    <div class="spacer-3rem"></div>
+
+    <!-- footer -->
+    <footer
+      class="relative flex flex-col h-44 justify-center align-items-center w-full p-5 z-50 bg-rose-200"
+      style="bottom: 0"
+    >
+      <div class="text-grey-700">
+        Made with
+        <span class="text-rose-700 font-bold ml-1 mr-1">&lt;/&gt;</span> by
+
+        <a class="ml-1 text-hover-rose-600">Ananya</a>
+      </div>
+      <div class="flex mt-3 align-items-center justify-center">
+        <a href="https://github.com/Ananyamadhu08" target="_blank">
+          <i class="fab fa-github mr-2 text-rose-700"></i>
+        </a>
+        <a href="https://twitter.com/AnanyaMadhu27" target="_blank">
+          <i class="fab fa-twitter mr-2 text-rose-700"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/ananya-madhu-74479b206/"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin mr-2 text-rose-700"></i>
+        </a>
+      </div>
+
+      <div class="text-grey-700 mt-5">
+        Designed using
+
+        <a class="text-hover-rose-600">Fusion CSS</a>
+      </div>
+    </footer>
+    <!-- footer -->
+  </body>
+</html>
